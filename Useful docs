@@ -9,4 +9,19 @@ Burndown charts – effort needed for this Sprint
 
 Start of Blog
 We have decided to work on the project Myhome which is a Home finance management project. It is a simple desktop program
-that runs in Microsoft Visual Studio. 
+that runs in Microsoft Visual Studio. At first glance the main features and bug fixes we are going to implement are of medium
+and low priorty, however we feel like we should achieve smaller goals fist and see what its like doing a full SCRUM rotation. 
+The fixes we are going to do are:
+
+Updating categories allows the id to be changed #98
+The code should be updated to follow the following steps:
+Try to pull the item from the database
+If the item does not exist do nothing or create a new item (this can be decided during the work)
+Update only the updatable properties
+save the item
+
+&
+
+Deleting a Transaction #74 - 
+
+Category Decription Field #71 - The category object should have an additional field to contain comments/description.
