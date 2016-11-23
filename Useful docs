@@ -14,7 +14,7 @@ Standup Meetings -
 Start of Blog (16.11.2016)
 We have decided to work on the project Myhome which is a Home finance management project. It is a simple desktop program
 that runs in Microsoft Visual Studio. At first glance the main features and bug fixes we are going to implement are of medium
-and low priorty, however we feel like we should achieve smaller goals fist and see what its like doing a full SCRUM rotation. 
+and low priorty, however we feel like we should achieve smaller goals first and see what its like doing a full SCRUM rotation. 
 The fixes we are going to do are:
 
 Updating categories allows the id to be changed #98
@@ -31,3 +31,6 @@ Deleting a Transaction #74 -
 &
 
 Category Decription Field #71 - The category object should have an additional field to contain comments/description.
+
+Second Week (23.11.2016)
+This week we are trying to stop the project from freezing whenever we click on something in the navigation bar. 
