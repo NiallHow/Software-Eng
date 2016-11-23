@@ -554,7 +554,32 @@ namespace MyHome.UI
             tslblMdiChildNumber.Text = MdiChilrenSum.ToString();
         }
 
-        #endregion      
+        #endregion
 
+
+        private void fullscreenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int i = 0;
+
+            if (i == 0)//fullscreen
+            {
+                i++;
+                this.WindowState = FormWindowState.Normal;
+                this.FormBorderStyle = FormBorderStyle.None;
+                this.WindowState = FormWindowState.Maximized;
+                
+            }
+            else if(i == 1)//exit fullscreen
+            {
+                
+
+                
+                i--;
+                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
+                this.WindowState = FormWindowState.Normal;
+                this.Width = 956;
+                this.Height = 509;
+            }
+        }
     }
 }
