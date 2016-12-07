@@ -83,20 +83,14 @@ namespace MyHome.UI
         /// </summary>
         /// <param name="sender">Standard sender object</param>
         /// <param name="e">Standard event object</param>
-        private void showToolBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            toolStrip.Visible = showToolBarToolStripMenuItem.Checked;
-        }
+        
 
         /// <summary>
         /// Shows or hides the status bar
         /// </summary>
         /// <param name="sender">Standard sender object</param>
         /// <param name="e">Standard event object</param>
-        private void showStatusBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            statusStrip.Visible = showStatusBarToolStripMenuItem.Checked;
-        }
+       
 
         /// <summary>
         /// Closes all child forms currently open
@@ -557,29 +551,29 @@ namespace MyHome.UI
         #endregion
 
 
-        private void fullscreenToolStripMenuItem_Click(object sender, EventArgs e)
+        
+
+        private void backupToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int i = 0;
+            toolStrip.Visible = backupToolStripMenuItem.Checked;
+        }
 
-            if (i == 0)//fullscreen
-            {
-                i++;
-                this.WindowState = FormWindowState.Normal;
-                this.FormBorderStyle = FormBorderStyle.None;
-                this.WindowState = FormWindowState.Maximized;
-                
-            }
-            else if(i == 1)//exit fullscreen
-            {
-                
+        private void showStatusBarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            statusStrip.Visible = showStatusBarToolStripMenuItem1.Checked;
+        }
 
-                
-                i--;
-                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
-                this.WindowState = FormWindowState.Normal;
-                this.Width = 956;
-                this.Height = 509;
-            }
+        private void fullscreenToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            (new AboutUI()).ShowDialog();
         }
     }
-}
+    }
+
