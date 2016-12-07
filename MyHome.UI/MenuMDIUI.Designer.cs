@@ -67,6 +67,8 @@
             this.showStatusBarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.fullscreenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.howToInstallToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -162,7 +164,8 @@
             this.closeAllToolStripMenuItem,
             this.exitToolStripMenuItem,
             this.backupStripMenuItem,
-            this.optionsToolStripMenuItem});
+            this.optionsToolStripMenuItem,
+            this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(940, 24);
@@ -385,6 +388,21 @@
             this.aboutToolStripMenuItem1.Text = "About";
             this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem1_Click);
             // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.howToInstallToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // howToInstallToolStripMenuItem
+            // 
+            this.howToInstallToolStripMenuItem.Name = "howToInstallToolStripMenuItem";
+            this.howToInstallToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.howToInstallToolStripMenuItem.Text = "How to install";
+            this.howToInstallToolStripMenuItem.Click += new System.EventHandler(this.howToInstallToolStripMenuItem_Click);
+            // 
             // MenuMDIUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -453,6 +471,8 @@
         private System.Windows.Forms.ToolStripMenuItem showStatusBarToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem fullscreenToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem howToInstallToolStripMenuItem;
     }
 }
 

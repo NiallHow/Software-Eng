@@ -67,6 +67,7 @@ namespace MyHome.UI
 
         #region Control Event Methods
 
+        
         /// <summary>
         /// Closes the form -on close FormClosing will activate and check for changes in
         /// the data base
@@ -574,6 +575,15 @@ namespace MyHome.UI
         {
             (new AboutUI()).ShowDialog();
         }
+
+        private void howToInstallToolStripMenuItem_Click(object sender, EventArgs e)
+        { 
+            MessageBox.Show("1. Install SQL Server(http://downloadsqlserverexpress.com)" + Environment.NewLine + "2. Run scripts found in the MyHome/MyHome.Persistence/Scripts folder" + Environment.NewLine + "3.Restart the Sql Server process", "How to install");
+            
+            
+
+        }
+
     }
     }
 
