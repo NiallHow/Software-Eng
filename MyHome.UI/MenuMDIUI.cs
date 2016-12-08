@@ -67,6 +67,7 @@ namespace MyHome.UI
 
         #region Control Event Methods
 
+        
         /// <summary>
         /// Closes the form -on close FormClosing will activate and check for changes in
         /// the data base
@@ -83,20 +84,14 @@ namespace MyHome.UI
         /// </summary>
         /// <param name="sender">Standard sender object</param>
         /// <param name="e">Standard event object</param>
-        private void showToolBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            toolStrip.Visible = showToolBarToolStripMenuItem.Checked;
-        }
+        
 
         /// <summary>
         /// Shows or hides the status bar
         /// </summary>
         /// <param name="sender">Standard sender object</param>
         /// <param name="e">Standard event object</param>
-        private void showStatusBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            statusStrip.Visible = showStatusBarToolStripMenuItem.Checked;
-        }
+       
 
         /// <summary>
         /// Closes all child forms currently open
@@ -554,7 +549,41 @@ namespace MyHome.UI
             tslblMdiChildNumber.Text = MdiChilrenSum.ToString();
         }
 
-        #endregion      
+        #endregion
+
+
+        
+
+        private void backupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            toolStrip.Visible = backupToolStripMenuItem.Checked;
+        }
+
+        private void showStatusBarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            statusStrip.Visible = showStatusBarToolStripMenuItem1.Checked;
+        }
+
+        private void fullscreenToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            (new AboutUI()).ShowDialog();
+        }
+
+        private void howToInstallToolStripMenuItem_Click(object sender, EventArgs e)
+        { 
+            MessageBox.Show("1. Install SQL Server(http://downloadsqlserverexpress.com)" + Environment.NewLine + "2. Run scripts found in the MyHome/MyHome.Persistence/Scripts folder" + Environment.NewLine + "3.Restart the Sql Server process", "How to install");
+            
+            
+
+        }
 
     }
-}
+    }
+
