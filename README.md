@@ -1,11 +1,31 @@
 [![Stories in Ready](https://badge.waffle.io/M-Zuber/MyHome.png?label=ready&title=Ready)](https://waffle.io/M-Zuber/MyHome) [![Trello board](https://img.shields.io/badge/Trello-Extra%20discussion-blue.svg)](https://trello.com/b/WGPDnoJX/myhome) [![Build status](https://ci.appveyor.com/api/projects/status/fi52j31qyvnfvs08?svg=true)](https://ci.appveyor.com/project/M-Zuber/myhome)
 
-MyHome
+MyHome - University of Lincoln - Software Engineering Assessment
 ==========
 
 Home finance management
 
 A simple desktop program to manage finances. Currently the feauture set is sparse but greatness is in the future.
+
+For this assignment you are to work within the constraints of an agile methodology, namely that of
+SCRUM. 
+
+You have been contracted by a large open-source project to make amendments to one of their projects.
+You need to follow several steps in order to successfully complete the project.
+1 – Identify an Open-Source Project to contribute to.
+- A list of possible projects will be provided; however, you are welcome to select your own
+- If you find your own Open-Source project this needs to be approved
+2 – Analyse the Project Domain.
+- Carry out ‘Domain Modelling’ of the system
+3 – If the project is provided on GitHub clone the Project
+- If it’s provided by another SVN, or ZIP, make a local copy of the project
+4 – Identify what contribution you are to make to the Project.
+- Big Fixes
+- Additional Features (from the feature request list)
+- Documentation Additions
+- Etc.
+5 – Commit your additions / updates.
+- Note, they don’t have to be accepted or entered into the main branch.
 
 ## For Developers
 
