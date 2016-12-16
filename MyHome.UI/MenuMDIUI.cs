@@ -584,6 +584,12 @@ namespace MyHome.UI
 
         }
 
+        private void windowedToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
+            
+        }
     }
     }
 

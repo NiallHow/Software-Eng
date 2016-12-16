@@ -69,6 +69,7 @@
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.howToInstallToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.windowedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -355,6 +356,7 @@
             this.backupToolStripMenuItem,
             this.showStatusBarToolStripMenuItem1,
             this.fullscreenToolStripMenuItem1,
+            this.windowedToolStripMenuItem,
             this.aboutToolStripMenuItem1});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
             this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
@@ -399,9 +401,16 @@
             // howToInstallToolStripMenuItem
             // 
             this.howToInstallToolStripMenuItem.Name = "howToInstallToolStripMenuItem";
-            this.howToInstallToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.howToInstallToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.howToInstallToolStripMenuItem.Text = "How to install";
             this.howToInstallToolStripMenuItem.Click += new System.EventHandler(this.howToInstallToolStripMenuItem_Click);
+            // 
+            // windowedToolStripMenuItem
+            // 
+            this.windowedToolStripMenuItem.Name = "windowedToolStripMenuItem";
+            this.windowedToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.windowedToolStripMenuItem.Text = "Windowed";
+            this.windowedToolStripMenuItem.Click += new System.EventHandler(this.windowedToolStripMenuItem_Click);
             // 
             // MenuMDIUI
             // 
@@ -473,6 +482,7 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem howToInstallToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem windowedToolStripMenuItem;
     }
 }
 
